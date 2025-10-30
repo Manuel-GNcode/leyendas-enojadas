@@ -12,13 +12,24 @@
   font-weight: normal;
   font-style: normal;
 }
-h1, h2 {
-  font-family: 'sigmar';
-}
-p {
-  font-family: 'shantellSans';
-}
 
+@layer {
+  h1 {
+    @apply text-3xl text-white font-sigmar;
+  }
+  h2 {
+    @apply text-xl text-white font-sigmar;
+  }
+  p {
+    @apply text-sm text-white font-shantellSans;
+  }
+  .article-why {
+    @apply bg-neo-black p-4 pt-[56px] rounded-2xl relative h-55 flex flex-col justify-start gap-4;
+  }
+  .img-why {
+    @apply absolute top-0 left-1/2 size-20 bg-white rounded-full -translate-1/2;
+  }
+}
 @theme {
   --color-neo-black: hsl(22.5, 16.67%, 9.41%);
 
