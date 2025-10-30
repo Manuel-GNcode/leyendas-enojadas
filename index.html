@@ -2,15 +2,39 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <link rel="icon" type="image/svg+xml" href="/public/images/logo-icono.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>leyendas-enojadas</title>
     <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <nav class="bg-white border flex justify-between items-center py-2 px-4 fixed w-full h-20">
+      <a href="#" class="h-full">
+        <img class="h-full object-contain" src="public/images/logo-icono.png" alt="Logo">
+      </a>
+
+      <button class="h-8 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" class="size-full" viewBox="0 0 50 50">
+          <path
+            d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z">
+          </path>
+        </svg>
+      </button>
+      <ul class="hidden"></ul>
+    </nav>
+
+    <main class="bg-neo-black">
+      <section id="hero" class="h-dvh flex flex-col pt-20 items-center justify-center gap-4">
+        <div class="w-90">
+          <img class="w-8/10 object-contain -mb-10 mx-auto" src="public/images/logo_1-8.png" alt="">
+          <img class="w-full object-contain -mb-10" src="public/images/Banner_1-8.png" alt="">
+        </div>
+        <div class="w-70 text-center">
+          <p class="text-white text-sm">Un juego de cartas de alto riesgo y supervivencia, inspirado en los Mitos y Leyendas más famosos de Colombia.</p>
+          <button class="bg-white text-neo-black font-shantellSans font-bold mt-4 py-2 px-4 rounded-md">¡Descarga las reglas aquí!</button>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

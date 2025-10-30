@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'shantellSans';
+  src: url('/fonts/ShantellSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sigmar';
+  src: url('/fonts/Sigmar-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2 {
+  font-family: 'sigmar';
+}
+p {
+  font-family: 'shantellSans';
+}
+
+@theme {
+  --color-neo-black: hsl(22.5, 16.67%, 9.41%);
+
+  --font-shantellSans: 'shantellSans';
+  --font-sigmar: 'sigmar';
+}
