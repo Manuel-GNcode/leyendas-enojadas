@@ -29,6 +29,18 @@
   .img-why {
     @apply absolute top-0 left-1/2 size-20 bg-white rounded-full -translate-1/2;
   }
+  .article-rules {
+    @apply flex gap-4;
+  }
+  .article-rules-img {
+    @apply flex flex-col gap-1 w-10;
+  }
+  .article-rules-img img {
+    @apply w-full;
+  }
+  .article-rules-txt {
+    @apply flex-1;
+  }
 }
 @theme {
   --color-neo-black: hsl(22.5, 16.67%, 9.41%);
