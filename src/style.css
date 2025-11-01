@@ -23,11 +23,14 @@
   p {
     @apply text-sm text-white font-shantellSans;
   }
+  .txt-black {
+    @apply text-neo-black;
+  }
   .article-why {
-    @apply bg-neo-black p-4 pt-[56px] rounded-2xl relative h-55 flex flex-col justify-start gap-4;
+    @apply bg-neo-black p-4 pt-[56px] rounded-2xl relative h-60 flex flex-col justify-start gap-4;
   }
   .img-why {
-    @apply absolute top-0 left-1/2 size-20 bg-white rounded-full -translate-1/2;
+    @apply absolute top-0 left-1/2 size-20 bg-white rounded-full -translate-1/2 p-3;
   }
   .article-rules {
     @apply flex gap-4;
@@ -40,6 +43,9 @@
   }
   .article-rules-txt {
     @apply flex-1;
+  }
+  .article-app {
+    @apply h-50 flex flex-col justify-center gap-4 p-4;
   }
 }
 @theme {

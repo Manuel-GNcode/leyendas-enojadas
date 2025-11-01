@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/images/logo-icono.png" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo-icono.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>leyendas-enojadas</title>
     <link rel="stylesheet" href="/src/style.css">
@@ -10,7 +10,7 @@
   <body class="text-center">
     <nav class="bg-white border flex justify-between items-center py-2 px-4 fixed z-10 w-full h-20">
       <a href="#" class="h-full">
-        <img class="h-full object-contain" src="public/images/logo-icono.png" alt="Logo">
+        <img class="h-full object-contain" src="/images/logo-icono.png" alt="Logo">
       </a>
 
       <button class="h-8 cursor-pointer">
@@ -24,10 +24,11 @@
     </nav>
 
     <main class="bg-neo-black">
-      <section id="hero" class="h-dvh flex flex-col pt-20 items-center justify-center gap-4">
-        <div class="w-90">
-          <img class="w-8/10 object-contain -mb-10 mx-auto" src="public/images/logo_1-8.png" alt="">
-          <img class="w-full object-contain -mb-10" src="public/images/Banner_1-8.png" alt="">
+      <!-- hero -->
+      <section id="hero" class="min-h-dvh flex flex-col pt-24 pb-4 items-center justify-center gap-4">
+        <div class="w-85">
+          <img class="w-8/10 object-contain -mb-10 mx-auto" src="/images/logo_1-8.png" alt="">
+          <img class="w-full object-contain -mb-10" src="/images/Banner_1-8.png" alt="">
         </div>
         <div class="w-70">
           <p>Un juego de cartas de alto riesgo y supervivencia, inspirado en los Mitos y Leyendas más famosos de Colombia.</p>
@@ -35,30 +36,38 @@
         </div>
       </section>
 
-      <section class="py-8 px-4 bg-[url(/images/fondo_recurso-8.png)]">
+      <section class="py-8 px-6 bg-[url(/images/fondo_recurso-8.png)]">
         <h1 class="mb-[72px]">¿Por qué jugar?</h1>
 
         <div class="flex flex-col gap-[72px]">
           <article class="article-why">
-            <img class="img-why" src="#" alt="algo">
+            <figure class="img-why">
+              <img src="/images/mito.png" alt="algo">
+            </figure>
             <h2>Fomenta el legado cultural</h2>
             <p>El juego transforma estos cuentos ancestrales en un lenguaje moderno y emocionante, garantizando que las nuevas generaciones conozcan, valoren y compartan el folclore de su país.</p>
           </article>
 
           <article class="article-why">
-            <img class="img-why" src="#" alt="algo">
+            <figure class="img-why">
+              <img src="/images/estrategia.png" alt="algo">
+            </figure>
             <h2>Desarrolla la estrategia</h2>
             <p>Los niños aprenden a tomar decisiones de riesgo, a gestionar recursos (cartas) y a planear el ataque u defensa.</p>
           </article>
 
           <article class="article-why">
-            <img class="img-why" src="#" alt="algo">
+            <figure class="img-why">
+              <img src="/images/valor.png" alt="algo">
+            </figure>
             <h2>Transmite valores</h2>
             <p>Detrás de cada Leyenda y mito hay una enseñanza clave que se refuerza a través del juego.</p>
           </article>
 
           <article class="article-why">
-            <img class="img-why" src="#" alt="algo">
+            <figure class="img-why">
+              <img src="/images/libro.png" alt="algo">
+            </figure>
             <h2>Aprendizaje activo</h2>
             <p>La mecánica de eliminación y robo mantiene a los jugadores concentrados y activos durante el juego.</p>
           </article>
@@ -75,7 +84,7 @@
         <div class="flex flex-col gap-4">
           <article class="article-rules">
             <div class="article-rules-img">
-              <img src="public/images/leyenda-enojada_1-8.png" alt="logo">
+              <img src="/images/leyenda-enojada_1-8.png" alt="logo">
             </div>
             <div class="article-rules-txt">
               <h2>Leyendas enojadas</h2>
@@ -85,8 +94,8 @@
         
           <article class="article-rules">
             <div class="article-rules-img">
-              <img src="public/images/calma_1-8.png" alt="logo">
-              <img src="public/images/tierra-sagrada_1-8.png" alt="logo">
+              <img src="/images/calma_1-8.png" alt="logo">
+              <img src="/images/tierra-sagrada_1-8.png" alt="logo">
             </div>
             <div class="article-rules-txt">
               <h2>Calma y tierra sagrada</h2>
@@ -96,9 +105,9 @@
         
           <article class="article-rules">
             <div class="article-rules-img">
-              <img src="public/images/relato_1-8.png" alt="logo">
-              <img src="public/images/tierra-peligrosa_1-8.png" alt="logo">
-              <img src="public/images/cafecito_1-8.png" alt="logo">
+              <img src="/images/relato_1-8.png" alt="logo">
+              <img src="/images/tierra-peligrosa_1-8.png" alt="logo">
+              <img src="/images/cafecito_1-8.png" alt="logo">
             </div>
             <div class="article-rules-txt">
               <h2>Relatos</h2>
@@ -112,12 +121,39 @@
         <h1>El catálogo cultural</h1>
         <div class="mt-8 flex flex-wrap gap-4 justify-center">
           <article class="flex flex-col gap-4 bg-neo-black h-auto w-70 pb-8 rounded-t-3xl overflow-hidden">
-            <img class="w-full h-70 object-cover" src="public/images/La llorona_1-8.png" alt="Llorona">
+            <img class="w-full h-70 object-cover" src="/images/La llorona_1-8.png" alt="Llorona">
             <h2>La Llorona</h2>
             <span class="w-2/3 mx-auto bg-white h-px"></span>
             <p class="px-4">La trágica historia de una madre que fue castigada por su propio egoísmo. Ahora, su lamento desconsolado resuena cerca de los ríos y caminos, buscando a sus hijos perdidos y advirtiendo a quienes no valoran a su familia.</p>
           </article>
         </div>
+      </section>
+
+      <section>
+        <article class="article-app">
+          <h1>Oportunidades y aplicaciones</h1>
+          <p>Una herramienta didáctica en el aula.</p>
+        </article>
+
+        <article class="article-app bg-white">
+          <h2 class="txt-black">Integración curricular</h2>
+          <p class="txt-black">Permite explorar temas de patrimonio cultural inmaterial, geografía y cívica. Es un recurso dinámico para enseñar las tradiciones de Colombia.</p>
+        </article>
+
+        <article class="article-app">
+          <h2>Proyectos de investigación</h2>
+          <p>El misterio de las Leyendas motiva a los estudiantes a investigar sus orígenes, convirtiéndose en un punto de partida para proyectos escolares.</p>
+        </article>
+        
+        <article class="article-app bg-white">
+          <h2 class="txt-black">Desarrollo de narración</h2>
+          <p class="txt-black">La estructura de los Relatos en el juego inspira a los niños a crear sus propias historias, cuentos o finales alternativos para las Leyendas. Fortalece la expresión oral y escrita.</p>
+        </article>
+
+        <article class="article-app">
+          <h2>Conciencia ambiental y cívica</h2>
+          <p>Las lecciones sobre estas historias facilitan un debate directo sobre la responsabilidad social, el cuidado del medio ambiente y el respeto por los demás.</p>
+        </article>
       </section>
     </main>
     <script type="module" src="/src/main.js"></script>
