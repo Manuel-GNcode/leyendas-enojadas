@@ -44,6 +44,15 @@
   .article-rules-txt {
     @apply flex-1;
   }
+  .article-catalogo {
+    @apply flex flex-col gap-4 bg-neo-black h-auto w-70 pb-8 rounded-t-3xl overflow-hidden;
+  }
+  .article-catalogo-img {
+    @apply w-full h-70 object-cover;
+  }
+  .article-catalogo-span {
+    @apply w-2/3 mx-auto bg-white h-px;
+  }
   .article-app {
     @apply h-50 flex flex-col justify-center gap-4 p-4;
   }
