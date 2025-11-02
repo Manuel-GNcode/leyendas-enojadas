@@ -27,7 +27,7 @@
     @apply text-neo-black;
   }
   .article-why {
-    @apply bg-neo-black p-4 pt-[56px] rounded-2xl relative h-60 w-80 max-w-100 flex flex-col justify-start gap-4;
+    @apply bg-neo-black p-4 pt-[56px] rounded-2xl relative h-60 w-75 max-w-100 flex flex-col justify-start gap-4 lg:h-70;
   }
   .img-why {
     @apply absolute top-0 left-1/2 size-20 bg-white rounded-full -translate-1/2 p-3;

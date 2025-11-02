@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/src/style.css">
   </head>
   <body class="text-center">
-    <nav class="bg-white border flex justify-between items-center py-2 px-4 fixed z-10 w-full h-18 sm:px-8">
+    <nav class="bg-white border flex justify-between items-center py-2 px-4 fixed z-10 w-full h-18 sm:px-8 lg:h-14">
       <a href="#" class="h-full">
         <img class="h-full object-contain" src="/images/logo-icono.png" alt="Logo">
       </a>
@@ -25,18 +25,18 @@
 
     <main class="bg-neo-black">
       <!-- hero -->
-      <section id="hero" class="min-h-dvh flex flex-col pt-24 pb-4 items-center justify-center gap-4">
-        <div class="w-85">
+      <section id="hero" class="min-h-dvh flex flex-col pt-24 pb-4 items-center justify-center gap-4 lg:flex-row lg:gap-20">
+        <div class="w-85 lg:w-100">
           <img class="w-8/10 object-contain -mb-10 mx-auto" src="/images/logo_1-8.png" alt="">
-          <img class="w-full object-contain -mb-10" src="/images/Banner_1-8.png" alt="">
+          <img class="w-full object-contain -mb-10 lg:mb-0" src="/images/Banner_1-8.png" alt="">
         </div>
-        <div class="w-70">
+        <div class="w-70 lg:w-90">
           <p>Un juego de cartas de alto riesgo y supervivencia, inspirado en los Mitos y Leyendas más famosos de Colombia.</p>
-          <button id="btn-rules" class="bg-white text-neo-black font-shantellSans font-bold mt-4 py-2 px-4 rounded-md cursor-pointer">¡Descarga las reglas aquí!</button>
+          <button id="btn-rules" class="bg-white text-neo-black font-shantellSans font-bold mt-4 py-2 px-4 rounded-md cursor-pointer lg:text-2xl lg:px-6 lg:py-4">¡Descarga las reglas aquí!</button>
         </div>
       </section>
 
-      <section class="py-8 px-6 bg-[url(/images/fondo_recurso-8.png)]">
+      <section class="py-8 px-6 bg-[url(/images/fondo_recurso-8.png)] lg:py-12">
         <h1 class="mb-[72px]">¿Por qué jugar?</h1>
 
         <div class="flex justify-center flex-wrap gap-x-8 gap-y-[72px]">
@@ -74,14 +74,14 @@
         </div>
       </section>
 
-      <section class="bg-neo-black flex flex-col gap-8 py-8 px-4 text-left sm:px-8">
+      <section class="bg-neo-black flex flex-col gap-8 py-8 px-4 text-left sm:px-8 lg:flex-row lg:py-14">
         <div>
           <h1 class="mb-2">Reglas simples, adrenalina máxima</h1>
           <p>El objetivo es simple:</p>
           <p>Ser el último aventurero en pie.</p>
         </div>
 
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 lg:flex-row">
           <article class="article-rules">
             <div class="article-rules-img">
               <img src="/images/leyenda-enojada_1-8.png" alt="logo">
@@ -117,9 +117,9 @@
         </div>
       </section>
 
-      <section class="py-8 px-4 bg-[url(/images/fondo_recurso-8.png)]">
+      <section class="py-8 px-4 bg-[url(/images/fondo_recurso-8.png)] lg:py-12">
         <h1>El catálogo cultural</h1>
-        <div class="mt-8 grid grid-cols-1 gap-8 w-fit mx-auto sm:grid-cols-2">
+        <div class="mt-8 grid grid-cols-1 gap-8 w-fit mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-16">
           <article class="article-catalogo">
             <img class="article-catalgo-img" src="/images/La llorona_1-8.png" alt="Llorona">
             <h2>La Llorona</h2>
@@ -164,13 +164,13 @@
         </div>
 
       </section>
-      <section class="flex flex-col">
-        <article class="article-app">
+      <section class="flex flex-col lg:flex-row lg:items-center">
+        <article class="article-app lg:w-3/10">
           <h1>Oportunidades y aplicaciones</h1>
           <p>Una herramienta didáctica en el aula.</p>
         </article>
 
-        <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:w-7/10">
           <article class="article-app bg-white">
             <h2 class="txt-black">Integración curricular</h2>
             <p class="txt-black">Permite explorar temas de patrimonio cultural inmaterial, geografía y cívica. Es un recurso
@@ -197,7 +197,7 @@
         </div>
       </section>
 
-      <footer class="flex gap-2 items-center justify-center bg-white py-6 sm:gap-4">
+      <footer class="flex gap-2 items-center justify-center bg-white py-6 sm:gap-4 lg:gap-10">
         <p class="txt-black">Desarrollado por WildDev</p>
         <img class="h-10" src="/images/logo-icono.png" alt="Logo">
         <p class="txt-black">Diseñado por Laura Miranda</p>
