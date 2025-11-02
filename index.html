@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/src/style.css">
   </head>
   <body class="text-center">
-    <nav class="bg-white border flex justify-between items-center py-2 px-4 fixed z-10 w-full h-20">
+    <nav class="bg-white border flex justify-between items-center py-2 px-4 fixed z-10 w-full h-18 sm:px-8">
       <a href="#" class="h-full">
         <img class="h-full object-contain" src="/images/logo-icono.png" alt="Logo">
       </a>
@@ -39,7 +39,7 @@
       <section class="py-8 px-6 bg-[url(/images/fondo_recurso-8.png)]">
         <h1 class="mb-[72px]">¿Por qué jugar?</h1>
 
-        <div class="flex flex-col gap-[72px]">
+        <div class="flex justify-center flex-wrap gap-x-8 gap-y-[72px]">
           <article class="article-why">
             <figure class="img-why">
               <img src="/images/mito.png" alt="algo">
@@ -74,7 +74,7 @@
         </div>
       </section>
 
-      <section class="bg-neo-black flex flex-col gap-8 py-8 px-4 text-left">
+      <section class="bg-neo-black flex flex-col gap-8 py-8 px-4 text-left sm:px-8">
         <div>
           <h1 class="mb-2">Reglas simples, adrenalina máxima</h1>
           <p>El objetivo es simple:</p>
@@ -119,7 +119,7 @@
 
       <section class="py-8 px-4 bg-[url(/images/fondo_recurso-8.png)]">
         <h1>El catálogo cultural</h1>
-        <div class="mt-8 grid grid-cols-1 gap-4 justify-items-center">
+        <div class="mt-8 grid grid-cols-1 gap-8 w-fit mx-auto sm:grid-cols-2">
           <article class="article-catalogo">
             <img class="article-catalgo-img" src="/images/La llorona_1-8.png" alt="Llorona">
             <h2>La Llorona</h2>
@@ -162,36 +162,42 @@
             <p class="px-4">La trágica historia de una madre que fue castigada por su propio egoísmo. Ahora, su lamento desconsolado resuena cerca de los ríos y caminos, buscando a sus hijos perdidos y advirtiendo a quienes no valoran a su familia.</p>
           </article>
         </div>
-      </section>
 
-      <section>
+      </section>
+      <section class="flex flex-col">
         <article class="article-app">
           <h1>Oportunidades y aplicaciones</h1>
           <p>Una herramienta didáctica en el aula.</p>
         </article>
 
-        <article class="article-app bg-white">
-          <h2 class="txt-black">Integración curricular</h2>
-          <p class="txt-black">Permite explorar temas de patrimonio cultural inmaterial, geografía y cívica. Es un recurso dinámico para enseñar las tradiciones de Colombia.</p>
-        </article>
-
-        <article class="article-app">
-          <h2>Proyectos de investigación</h2>
-          <p>El misterio de las Leyendas motiva a los estudiantes a investigar sus orígenes, convirtiéndose en un punto de partida para proyectos escolares.</p>
-        </article>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <article class="article-app bg-white">
+            <h2 class="txt-black">Integración curricular</h2>
+            <p class="txt-black">Permite explorar temas de patrimonio cultural inmaterial, geografía y cívica. Es un recurso
+              dinámico para enseñar las tradiciones de Colombia.</p>
+          </article>
         
-        <article class="article-app bg-white">
-          <h2 class="txt-black">Desarrollo de narración</h2>
-          <p class="txt-black">La estructura de los Relatos en el juego inspira a los niños a crear sus propias historias, cuentos o finales alternativos para las Leyendas. Fortalece la expresión oral y escrita.</p>
-        </article>
-
-        <article class="article-app">
-          <h2>Conciencia ambiental y cívica</h2>
-          <p>Las lecciones sobre estas historias facilitan un debate directo sobre la responsabilidad social, el cuidado del medio ambiente y el respeto por los demás.</p>
-        </article>
+          <article class="article-app">
+            <h2>Proyectos de investigación</h2>
+            <p>El misterio de las Leyendas motiva a los estudiantes a investigar sus orígenes, convirtiéndose en un punto de
+              partida para proyectos escolares.</p>
+          </article>
+        
+          <article class="article-app bg-white md:col-2 md:row-2">
+            <h2 class="txt-black">Desarrollo de narración</h2>
+            <p class="txt-black">La estructura de los Relatos en el juego inspira a los niños a crear sus propias historias,
+              cuentos o finales alternativos para las Leyendas. Fortalece la expresión oral y escrita.</p>
+          </article>
+        
+          <article class="article-app md:col-1 md:row-2">
+            <h2>Conciencia ambiental y cívica</h2>
+            <p>Las lecciones sobre estas historias facilitan un debate directo sobre la responsabilidad social, el cuidado del
+              medio ambiente y el respeto por los demás.</p>
+          </article>
+        </div>
       </section>
 
-      <footer class="flex gap-2 items-center justify-center bg-white py-6">
+      <footer class="flex gap-2 items-center justify-center bg-white py-6 sm:gap-4">
         <p class="txt-black">Desarrollado por WildDev</p>
         <img class="h-10" src="/images/logo-icono.png" alt="Logo">
         <p class="txt-black">Diseñado por Laura Miranda</p>
