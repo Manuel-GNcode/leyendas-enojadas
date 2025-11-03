@@ -8,24 +8,36 @@
     <link rel="stylesheet" href="/src/style.css">
   </head>
   <body class="text-center">
-    <nav class="bg-white border flex justify-between items-center py-2 px-4 fixed z-10 w-full h-18 sm:px-8 lg:h-14">
-      <a href="#" class="h-full">
+    <nav class="bg-white border flex justify-between items-center py-2 px-4 fixed z-10 w-full h-18 sm:px-8 lg:h-14 lg:py-0">
+      <a href="#inicio" class="h-full lg:py-2">
         <img class="h-full object-contain" src="/images/logo-icono.png" alt="Logo">
       </a>
 
-      <button class="h-8 cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" class="size-full" viewBox="0 0 50 50">
+      <button id="btn-menu" class="h-10 cursor-pointer bg-neo-black rounded-full p-2 lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" class="size-full" viewBox="0 0 50 50" fill="white" aria-hidden="true">
           <path
             d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z">
           </path>
         </svg>
       </button>
-      <ul class="hidden"></ul>
+      <ul class="hidden h-full justify-end w-9/10 items-center lg:flex">
+        <li class="nav-li-desk"><a href="#por-que-jugar">¿Por qué jugar?</a></li>
+        <li class="nav-li-desk"><a href="#reglas-simples">Reglas simples, adrenalina máxima</a></li>
+        <li class="nav-li-desk"><a href="#catalogo-cultural">El catálogo cultural</a></li>
+        <li class="nav-li-desk"><a href="#oportunidades">oportunidades y aplicaciones</a></li>
+      </ul>
     </nav>
+    <ul id="slide-menu" class="fixed z-5 top-0 right-0 translate-x-full bg-neo-black w-70 h-dvh px-8 pt-18 border-x border-x-white lg:hidden">
+      <li class="nav-li"><a class="nav-a" href="#inicio">Inicio</a></li>
+      <li class="nav-li"><a class="nav-a" href="#por-que-jugar">¿Por qué jugar?</a></li>
+      <li class="nav-li"><a class="nav-a" href="#reglas-simples">Reglas simples, adrenalina máxima</a></li>
+      <li class="nav-li"><a class="nav-a" href="#catalogo-cultural">El catálogo cultural</a></li>
+      <li class="nav-li"><a class="nav-a" href="#oportunidades">oportunidades y aplicaciones</a></li>
+    </ul>
 
     <main class="bg-neo-black">
       <!-- hero -->
-      <section id="hero" class="min-h-dvh flex flex-col pt-24 pb-4 items-center justify-center gap-4 lg:flex-row lg:gap-20">
+      <section id="inicio" class="min-h-dvh flex flex-col pt-24 pb-4 items-center justify-center gap-4 lg:flex-row lg:gap-20">
         <div class="w-85 lg:w-100">
           <img class="w-8/10 object-contain -mb-10 mx-auto" src="/images/logo_1-8.png" alt="">
           <img class="w-full object-contain -mb-10 lg:mb-0" src="/images/Banner_1-8.png" alt="">
@@ -36,7 +48,7 @@
         </div>
       </section>
 
-      <section class="py-8 px-6 bg-[url(/images/fondo_recurso-8.png)] lg:py-12">
+      <section id="por-que-jugar" class="py-18 px-6 bg-[url(/images/fondo_recurso-8.png)] lg:py-14">
         <h1 class="mb-[72px]">¿Por qué jugar?</h1>
 
         <div class="flex justify-center flex-wrap gap-x-8 gap-y-[72px]">
@@ -74,7 +86,7 @@
         </div>
       </section>
 
-      <section class="bg-neo-black flex flex-col gap-8 py-8 px-4 text-left sm:px-8 lg:flex-row lg:py-14">
+      <section id="reglas-simples" class="bg-neo-black flex flex-col gap-8 py-18 px-4 text-left sm:px-8 lg:flex-row lg:py-14">
         <div>
           <h1 class="mb-2">Reglas simples, adrenalina máxima</h1>
           <p>El objetivo es simple:</p>
@@ -117,7 +129,7 @@
         </div>
       </section>
 
-      <section class="py-8 px-4 bg-[url(/images/fondo_recurso-8.png)] lg:py-12">
+      <section id="catalogo-cultural" class="py-18 px-4 bg-[url(/images/fondo_recurso-8.png)] lg:py-14">
         <h1>El catálogo cultural</h1>
         <div class="mt-8 grid grid-cols-1 gap-8 w-fit mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-16">
           <article class="article-catalogo">
@@ -131,40 +143,40 @@
             <img class="article-catalgo-img" src="/images/el mohan-8.png" alt="Llorona">
             <h2>El Mohán</h2>
             <span class="article-catalogo-span"></span>
-            <p class="px-4">La trágica historia de una madre que fue castigada por su propio egoísmo. Ahora, su lamento desconsolado resuena cerca de los ríos y caminos, buscando a sus hijos perdidos y advirtiendo a quienes no valoran a su familia.</p>
+            <p class="px-4">Una criatura peluda y misteriosa que vive en las cuevas profundas de los ríos. Con su fuego y sus gritos, atrae a los pescadores y a los curiosos para que se pierdan, enseñando el respeto que se debe tener a la fuerza indomable de la naturaleza.</p>
           </article>
 
           <article class="article-catalogo">
             <img class="article-catalgo-img" src="/images/hombre-caiman-8.png" alt="Llorona">
             <h2>El Hombre Caimán</h2>
             <span class="article-catalogo-span"></span>
-            <p class="px-4">La trágica historia de una madre que fue castigada por su propio egoísmo. Ahora, su lamento desconsolado resuena cerca de los ríos y caminos, buscando a sus hijos perdidos y advirtiendo a quienes no valoran a su familia.</p>
+            <p class="px-4">Era un hombre común que amaba espiar a las mujeres en el río. Un brujo, harto de su curiosidad, lo transformó en mitad hombre, mitad caimán. Su figura es la advertencia viviente de no ser entrometido.</p>
           </article>
 
           <article class="article-catalogo">
             <img class="article-catalgo-img" src="/images/patasola-8.png" alt="Llorona">
             <h2>La Patasola</h2>
             <span class="article-catalogo-span"></span>
-            <p class="px-4">La trágica historia de una madre que fue castigada por su propio egoísmo. Ahora, su lamento desconsolado resuena cerca de los ríos y caminos, buscando a sus hijos perdidos y advirtiendo a quienes no valoran a su familia.</p>
+            <p class="px-4">Una mujer de gran belleza que, por ser desleal y mentirosa, fue castigada por el monte, que le dejó una sola pierna. Se esconde en el espeso follaje, saltando para asustar a los hombres que entran a hacer daño al bosque.</p>
           </article>
 
           <article class="article-catalogo">
             <img class="article-catalgo-img" src="/images/madremonte-8.png" alt="Llorona">
             <h2>La Madremonte</h2>
             <span class="article-catalogo-span"></span>
-            <p class="px-4">La trágica historia de una madre que fue castigada por su propio egoísmo. Ahora, su lamento desconsolado resuena cerca de los ríos y caminos, buscando a sus hijos perdidos y advirtiendo a quienes no valoran a su familia.</p>
+            <p class="px-4">Es la Guardiana Mayor, cubierta de hojas y lianas. Se enoja cuando ve que el ser humano contamina o destruye el bosque, desatando lluvias y tormentas para castigar a los intrusos que no respetan la vida vegetal.</p>
           </article>
 
           <article class="article-catalogo">
             <img class="article-catalgo-img" src="/images/el-sombreron-8.png" alt="Llorona">
             <h2>El Sombrerón</h2>
             <span class="article-catalogo-span"></span>
-            <p class="px-4">La trágica historia de una madre que fue castigada por su propio egoísmo. Ahora, su lamento desconsolado resuena cerca de los ríos y caminos, buscando a sus hijos perdidos y advirtiendo a quienes no valoran a su familia.</p>
+            <p class="px-4">Un ser diminuto con un sombrero inmensamente grande que se aparece de noche. Persigue a las personas vanidosas, cantándoles serenatas que no pueden ignorar, recordándoles la importancia de la humildad y de no andar solos muy tarde.</p>
           </article>
         </div>
-
       </section>
-      <section class="flex flex-col lg:flex-row lg:items-center">
+
+      <section id="oportunidades" class="flex flex-col lg:flex-row lg:items-center">
         <article class="article-app lg:w-3/10">
           <h1>Oportunidades y aplicaciones</h1>
           <p>Una herramienta didáctica en el aula.</p>
@@ -203,6 +215,7 @@
         <p class="txt-black">Diseñado por Laura Miranda</p>
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

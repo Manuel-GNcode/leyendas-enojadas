@@ -26,8 +26,14 @@
   .txt-black {
     @apply text-neo-black;
   }
+  .nav-li {
+    @apply border-b border-b-white py-4 text-white font-sigmar text-sm;
+  }
+  .nav-li-desk {
+    @apply font-sigmar text-sm text-neo-black px-3 h-full flex items-center hover:text-white hover:bg-neo-black;
+  }
   .article-why {
-    @apply bg-neo-black p-4 pt-[56px] rounded-2xl relative h-60 w-75 max-w-100 flex flex-col justify-start gap-4 lg:h-70;
+    @apply bg-neo-black p-4 pt-14 rounded-2xl relative h-60 w-75 max-w-100 flex flex-col justify-start gap-4 lg:h-70;
   }
   .img-why {
     @apply absolute top-0 left-1/2 size-20 bg-white rounded-full -translate-1/2 p-3;
