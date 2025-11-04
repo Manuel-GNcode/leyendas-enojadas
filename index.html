@@ -2,18 +2,35 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/logo-icono.png" />
+    <link rel="icon" type="image/png" href="/images/logo-icono.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>leyendas-enojadas</title>
     <link rel="stylesheet" href="/src/style.css">
+
+    <meta name="description" content="Sitio web del juego de cartas Leyendas Enojadas con información e instrucciones." />
+    <meta name="keywords" content="leyendas, mitos, juego, cartas, dulces, tradición" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://leyendas-enojadas.vercel.app/" />
+    <meta property="og:title" content="Leyendas Enojadas" />
+    <meta property="og:description" content="Sitio web del juego de cartas Leyendas Enojadas con información e instrucciones." />
+    <meta property="og:image" content="https://leyendas-enojadas.vercel.app/og.webp" />
+    <meta property="og:locale" content="es_ES" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="leyendas-enojadas.vercel.app" />
+    <meta property="twitter:url" content="https://leyendas-enojadas.vercel.app/" />
+    <meta name="twitter:title" content="Leyendas Enojadas" />
+    <meta name="twitter:description" content="Sitio web del juego de cartas Leyendas Enojadas con información e instrucciones." />
+    <meta name="twitter:image" content="https://leyendas-enojadas.vercel.app/new_og.webp" />
   </head>
   <body class="text-center">
-    <nav class="bg-white border flex justify-between items-center py-2 px-4 fixed z-10 w-full h-18 sm:px-8 lg:h-14 lg:py-0">
-      <a href="#inicio" class="h-full lg:py-2">
-        <img class="h-full object-contain" src="/images/logo-icono.png" alt="Logo">
+    <nav class="bg-white flex justify-between items-center py-2 px-4 fixed z-10 w-full h-18 sm:px-8 lg:h-14 lg:py-0">
+      <a href="#inicio" class="h-full lg:py-2" aria-label="Link para ir al Inicio">
+        <img width="164" height="124" class="h-full object-contain" src="/images/logo-icono.png" alt="Logo del juego de cartas Leyendas Enojadas">
       </a>
 
-      <button id="btn-menu" class="h-10 cursor-pointer bg-neo-black rounded-full p-2 lg:hidden">
+      <button id="btn-menu" aria-label="Botón para abrir el menú de navegación lateral" class="h-10 cursor-pointer bg-neo-black rounded-full p-2 lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" class="size-full" viewBox="0 0 50 50" fill="white" aria-hidden="true">
           <path
             d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z">
@@ -39,8 +56,8 @@
       <!-- hero -->
       <section id="inicio" class="min-h-dvh flex flex-col pt-24 pb-4 items-center justify-center gap-4 lg:flex-row lg:gap-20">
         <div class="w-85 lg:w-100">
-          <img class="w-8/10 object-contain -mb-10 mx-auto" src="/images/logo_1-8.png" alt="">
-          <img class="w-full object-contain -mb-10 lg:mb-0" src="/images/Banner_1-8.png" alt="">
+          <img width="456" height="96" class="w-8/10 object-contain -mb-10 mx-auto" src="/images/logo_1-8.png" alt="Titulo del juego de cartas Leyendas enojadas">
+          <img width="498" height="643" class="w-full object-contain -mb-10 lg:mb-0" src="/images/Banner_1-8.png" alt="Banner con el logo del juego Leyendas Enojadas">
         </div>
         <div class="w-70 lg:w-90">
           <p>Un juego de cartas de alto riesgo y supervivencia, inspirado en los Mitos y Leyendas más famosos de Colombia.</p>
@@ -54,7 +71,7 @@
         <div class="flex justify-center flex-wrap gap-x-8 gap-y-[72px]">
           <article class="article-why">
             <figure class="img-why">
-              <img src="/images/mito.png" alt="algo">
+              <img width="512" height="512" src="/images/mito.png" alt="Libro con un simbolo de ojo en el medio">
             </figure>
             <h2>Fomenta el legado cultural</h2>
             <p>El juego transforma estos cuentos ancestrales en un lenguaje moderno y emocionante, garantizando que las nuevas generaciones conozcan, valoren y compartan el folclore de su país.</p>
@@ -62,7 +79,7 @@
 
           <article class="article-why">
             <figure class="img-why">
-              <img src="/images/estrategia.png" alt="algo">
+              <img width="512" height="512" src="/images/estrategia.png" alt="Mapa con un plan trazado">
             </figure>
             <h2>Desarrolla la estrategia</h2>
             <p>Los niños aprenden a tomar decisiones de riesgo, a gestionar recursos (cartas) y a planear el ataque u defensa.</p>
@@ -70,7 +87,7 @@
 
           <article class="article-why">
             <figure class="img-why">
-              <img src="/images/valor.png" alt="algo">
+              <img width="512" height="512" src="/images/valor.png" alt="Dos manos protegiendo a una persona">
             </figure>
             <h2>Transmite valores</h2>
             <p>Detrás de cada Leyenda y mito hay una enseñanza clave que se refuerza a través del juego.</p>
@@ -78,7 +95,7 @@
 
           <article class="article-why">
             <figure class="img-why">
-              <img src="/images/libro.png" alt="algo">
+              <img width="512" height="512" src="/images/libro.png" alt="Libro abierto con un simbolo de un cerebro en el medio">
             </figure>
             <h2>Aprendizaje activo</h2>
             <p>La mecánica de eliminación y robo mantiene a los jugadores concentrados y activos durante el juego.</p>
@@ -96,7 +113,7 @@
         <div class="flex flex-col gap-4 lg:flex-row">
           <article class="article-rules">
             <div class="article-rules-img">
-              <img src="/images/leyenda-enojada_1-8.png" alt="logo">
+              <img width="72" height="73" src="/images/leyenda-enojada_1-8.png" alt="Simbolo de un cráneo con fondo rojo">
             </div>
             <div class="article-rules-txt">
               <h2>Leyendas enojadas</h2>
@@ -106,8 +123,8 @@
         
           <article class="article-rules">
             <div class="article-rules-img">
-              <img src="/images/calma_1-8.png" alt="logo">
-              <img src="/images/tierra-sagrada_1-8.png" alt="logo">
+              <img width="72" height="73" src="/images/calma_1-8.png" alt="Corazón verde con simbolo de salud en el medio">
+              <img width="73" height="73" src="/images/tierra-sagrada_1-8.png" alt="Sol brillante con fondo naranja">
             </div>
             <div class="article-rules-txt">
               <h2>Calma y tierra sagrada</h2>
@@ -117,9 +134,9 @@
         
           <article class="article-rules">
             <div class="article-rules-img">
-              <img src="/images/relato_1-8.png" alt="logo">
-              <img src="/images/tierra-peligrosa_1-8.png" alt="logo">
-              <img src="/images/cafecito_1-8.png" alt="logo">
+              <img width="73" height="73" src="/images/relato_1-8.png" alt="Simbolo de ojo mirando de frente">
+              <img width="73" height="73" src="/images/tierra-peligrosa_1-8.png" alt="Simbolo blanco de prohibición con fondo rojo">
+              <img width="73" height="73" src="/images/cafecito_1-8.png" alt="Grano de café con hojas en fondo azul">
             </div>
             <div class="article-rules-txt">
               <h2>Relatos</h2>
@@ -133,42 +150,42 @@
         <h1>El catálogo cultural</h1>
         <div class="mt-8 grid grid-cols-1 gap-8 w-fit mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-16">
           <article class="article-catalogo">
-            <img class="article-catalgo-img" src="/images/La llorona_1-8.png" alt="Llorona">
+            <img width="338" height="337" class="article-catalgo-img" src="/images/La llorona_1-8.png" alt="Ilustración de la leyende la Llorona" title="La Llorona">
             <h2>La Llorona</h2>
             <span class="article-catalogo-span"></span>
             <p class="px-4">La trágica historia de una madre que fue castigada por su propio egoísmo. Ahora, su lamento desconsolado resuena cerca de los ríos y caminos, buscando a sus hijos perdidos y advirtiendo a quienes no valoran a su familia.</p>
           </article>
 
           <article class="article-catalogo">
-            <img class="article-catalgo-img" src="/images/el mohan-8.png" alt="Llorona">
+            <img width="337" height="338" class="article-catalgo-img" src="/images/el mohan-8.png" alt="Ilustración de la leyenda el Mohán" title="El Mohán">
             <h2>El Mohán</h2>
             <span class="article-catalogo-span"></span>
             <p class="px-4">Una criatura peluda y misteriosa que vive en las cuevas profundas de los ríos. Con su fuego y sus gritos, atrae a los pescadores y a los curiosos para que se pierdan, enseñando el respeto que se debe tener a la fuerza indomable de la naturaleza.</p>
           </article>
 
           <article class="article-catalogo">
-            <img class="article-catalgo-img" src="/images/hombre-caiman-8.png" alt="Llorona">
+            <img width="337" height="337" class="article-catalgo-img" src="/images/hombre-caiman-8.png" alt="Ilustración de la leyenda el Hombre Caimán" title="El Hombre Caimán">
             <h2>El Hombre Caimán</h2>
             <span class="article-catalogo-span"></span>
             <p class="px-4">Era un hombre común que amaba espiar a las mujeres en el río. Un brujo, harto de su curiosidad, lo transformó en mitad hombre, mitad caimán. Su figura es la advertencia viviente de no ser entrometido.</p>
           </article>
 
           <article class="article-catalogo">
-            <img class="article-catalgo-img" src="/images/patasola-8.png" alt="Llorona">
+            <img width="338" height="337" class="article-catalgo-img" src="/images/patasola-8.png" alt="Ilustración de la leyenda la Patasola" title="La Patasola">
             <h2>La Patasola</h2>
             <span class="article-catalogo-span"></span>
             <p class="px-4">Una mujer de gran belleza que, por ser desleal y mentirosa, fue castigada por el monte, que le dejó una sola pierna. Se esconde en el espeso follaje, saltando para asustar a los hombres que entran a hacer daño al bosque.</p>
           </article>
 
           <article class="article-catalogo">
-            <img class="article-catalgo-img" src="/images/madremonte-8.png" alt="Llorona">
+            <img width="338" height="338" class="article-catalgo-img" src="/images/madremonte-8.png" alt="Ilustración de la leyenda la Madremonte" title="La Madremonte">
             <h2>La Madremonte</h2>
             <span class="article-catalogo-span"></span>
             <p class="px-4">Es la Guardiana Mayor, cubierta de hojas y lianas. Se enoja cuando ve que el ser humano contamina o destruye el bosque, desatando lluvias y tormentas para castigar a los intrusos que no respetan la vida vegetal.</p>
           </article>
 
           <article class="article-catalogo">
-            <img class="article-catalgo-img" src="/images/el-sombreron-8.png" alt="Llorona">
+            <img width="337" height="338" class="article-catalgo-img" src="/images/el-sombreron-8.png" alt="Ilustración de la leyenda el Sombrerón" title="El Sombrerón">
             <h2>El Sombrerón</h2>
             <span class="article-catalogo-span"></span>
             <p class="px-4">Un ser diminuto con un sombrero inmensamente grande que se aparece de noche. Persigue a las personas vanidosas, cantándoles serenatas que no pueden ignorar, recordándoles la importancia de la humildad y de no andar solos muy tarde.</p>
@@ -211,7 +228,7 @@
 
       <footer class="flex gap-2 items-center justify-center bg-white py-6 sm:gap-4 lg:gap-10">
         <p class="txt-black">Desarrollado por WildDev</p>
-        <img class="h-10" src="/images/logo-icono.png" alt="Logo">
+        <img width="164" height="124" class="h-10" src="/images/logo-icono.png" alt="Logo del juego de cartas Leyendas Enojadas">
         <p class="txt-black">Diseñado por Laura Miranda</p>
       </footer>
     </main>
