@@ -2,15 +2,17 @@
 
 @font-face {
   font-family: 'shantellSans';
-  src: url('/fonts/ShantellSans-Regular.ttf') format('truetype');
+  src: url('/fonts/ShantellSans-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'sigmar';
-  src: url('/fonts/Sigmar-Regular.ttf') format('truetype');
+  src: url('/fonts/Sigmar-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @layer {

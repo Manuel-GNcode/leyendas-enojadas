@@ -2,9 +2,13 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/images/logo-icono.png" />
+    <link rel="icon" type="image/png" href="/logo-icono.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>leyendas-enojadas</title>
+    <link rel="preload" href="/src/style.css" as="style">
+    <link rel="preload" href="/fonts/ShantellSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/Sigmar-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
     <link rel="stylesheet" href="/src/style.css">
 
     <meta name="description" content="Sitio web del juego de cartas Leyendas Enojadas con información e instrucciones." />
@@ -27,7 +31,7 @@
   <body class="text-center">
     <nav class="bg-white flex justify-between items-center py-2 px-4 fixed z-10 w-full h-18 sm:px-8 lg:h-14 lg:py-0">
       <a href="#inicio" class="h-full lg:py-2" aria-label="Link para ir al Inicio">
-        <img width="164" height="124" class="h-full object-contain" src="/images/logo-icono.png" alt="Logo del juego de cartas Leyendas Enojadas">
+        <img width="164" height="124" class="h-full object-contain" src="/logo-icono.png" alt="Logo del juego de cartas Leyendas Enojadas">
       </a>
 
       <button id="btn-menu" aria-label="Botón para abrir el menú de navegación lateral" class="h-10 cursor-pointer bg-neo-black rounded-full p-2 lg:hidden">
@@ -56,8 +60,8 @@
       <!-- hero -->
       <section id="inicio" class="min-h-dvh flex flex-col pt-24 pb-4 items-center justify-center gap-4 lg:flex-row lg:gap-20">
         <div class="w-85 lg:w-100">
-          <img width="456" height="96" class="w-8/10 object-contain -mb-10 mx-auto" src="/images/logo_1-8.png" alt="Titulo del juego de cartas Leyendas enojadas">
-          <img width="498" height="643" class="w-full object-contain -mb-10 lg:mb-0" src="/images/Banner_1-8.png" alt="Banner con el logo del juego Leyendas Enojadas">
+          <img fetchpriority="high" width="456" height="96" class="w-8/10 object-contain -mb-10 mx-auto" src="/logo.webp" alt="Titulo del juego de cartas Leyendas enojadas">
+          <img fetchpriority="high" width="498" height="643" class="w-full object-contain -mb-10 lg:mb-0" src="/banner.webp" alt="Banner con el logo del juego Leyendas Enojadas">
         </div>
         <div class="w-70 lg:w-90">
           <p>Un juego de cartas de alto riesgo y supervivencia, inspirado en los Mitos y Leyendas más famosos de Colombia.</p>
@@ -228,11 +232,11 @@
 
       <footer class="flex gap-2 items-center justify-center bg-white py-6 sm:gap-4 lg:gap-10">
         <p class="txt-black">Desarrollado por WildDev</p>
-        <img width="164" height="124" class="h-10" src="/images/logo-icono.png" alt="Logo del juego de cartas Leyendas Enojadas">
+        <img width="164" height="124" class="h-10" src="/logo-icono.png" alt="Logo del juego de cartas Leyendas Enojadas">
         <p class="txt-black">Diseñado por Laura Miranda</p>
       </footer>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script type="module" src="/src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <script type="module" src="/src/main.js" defer></script>
   </body>
 </html>
