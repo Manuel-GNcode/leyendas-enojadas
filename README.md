@@ -12,6 +12,7 @@ sus personajes basados en criaturas míticas colombianas, y las mecánicas de ju
 - Historia y contexto de cada leyenda representada
 
 ## Instalación
+```bash
 # Clona el repositorio
 git clone https://github.com/Manuel-GNcode/leyendas-enojadas.git
 
